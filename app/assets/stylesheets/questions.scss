@@ -1,0 +1,45 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question-thread{
+  border: 3px green solid;
+  margin-top: 15%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center
+}
+
+li {
+  list-style-type: none;
+  text-align: left
+}
+
+button {
+  float: right;
+  padding: 8px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  padding: 8px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+form {
+  border: 3px green solid;
+
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center
+}
+
