@@ -5,6 +5,7 @@ class QuestionList extends React.Component {
     this.state = {
       questions: [],
       clicked: false
+
     }
     this.click = this.click.bind(this),
     this.showform = this.showform.bind(this)
