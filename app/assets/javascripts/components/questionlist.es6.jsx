@@ -3,8 +3,11 @@ class QuestionList extends React.Component {
   constructor(){
     super()
     this.state = {
-      questions: []
+      questions: [],
+      clicked: false
     }
+    this.click = this.click.bind(this),
+    this.showform = this.showform.bind(this)
   }
 
   componentDidMount(){
@@ -13,9 +16,18 @@ class QuestionList extends React.Component {
     })
   }
 
-  showform(event){
+  click(){
+    this.setState({
+      clicked: true
+    })
+  }
 
-    return <QuestionForm />
+  showform(){
+    if(this.state.clicked){
+      return <QuestionForm />
+    }else{
+      return null;
+    }
   }
 
 
@@ -31,7 +43,7 @@ class QuestionList extends React.Component {
               })
             }
           </ul>
-          <button onClick={this.showform}>Post New Question</button>
+          <button onClick={this.click}>Post New Question</button>
         </section>
         {this.showform()}
       </div>
